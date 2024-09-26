@@ -1,0 +1,42 @@
+- CREATE database telemedicine_app;
+-- USE telemedicine_app;
+-- Patients Table
+-- CREATE TABLE patients (
+   --  id INT AUTO_INCREMENT PRIMARY KEY,
+    -- full_name VARCHAR(100),
+    -- email VARCHAR(100) UNIQUE,
+    -- password VARCHAR(255),
+    -- phone_number VARCHAR(15),
+    -- created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
+-- Doctors Table
+
+-- CREATE TABLE doctors (
+   --  id INT AUTO_INCREMENT PRIMARY KEY,
+  --   full_name VARCHAR(100),
+  --   email VARCHAR(100) UNIQUE,
+  --   password VARCHAR(255),
+-- phone_number VARCHAR(15),
+  --   specialty VARCHAR(100),
+    -- verification_status BOOLEAN DEFAULT FALSE,
+   --  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
+-- Appointments Table
+-- CREATE TABLE appointments (
+   --  id INT AUTO_INCREMENT PRIMARY KEY,
+   --  patient_id INT,
+   --  doctor_id INT,
+   --  appointment_time DATETIME,
+   --  status ENUM('Scheduled', 'Completed', 'Cancelled') DEFAULT 'Scheduled',
+  --   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+ --    FOREIGN KEY (patient_id) REFERENCES patients(id),
+--     FOREIGN KEY (doctor_id) REFERENCES doctors(id)
+-- );
+
+-- -- Admin Table
+-- CREATE TABLE admin (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     username VARCHAR(100) UNIQUE,
+--     password VARCHAR(255),
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- );
